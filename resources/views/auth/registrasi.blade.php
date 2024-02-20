@@ -22,10 +22,10 @@
                         <div class="main-signin-header">
                             <h2>Selamat Datang</h2>
                             <div class="px-0 col-12 mb-2">
-                                
+                                @include('componen.pesan')
                             </div>
                             <h6>Form Registrasi</h6>
-                            
+                            <form method="POST" action="{{ route('auth_regis') }}">
                                 @csrf
                                 <div class="form-group">
                                     <label>Username</label>

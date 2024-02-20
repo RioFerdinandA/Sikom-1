@@ -15,14 +15,33 @@
 <div class="col-xl-12">
     <div class="card">
         <div class="card-header pb-0">
-            <div class="d-flex justify-content-between">
-                <a href="{{ route ('buku.create')}}" class="btn btn-warning" <i class="fe fe-file-plus"></i> Tambah </a>
+            <div class="d-flex my-auto btn-list justify-content-end">
+                <a href="{{ route('buku.create') }}" class="btn btn-sm btn-danger"><i
+                    class="fa fa-plus"></i> Tambah</a></a>
+            <!-- BUTTON MODAL IMPORT EXCEL -->
+            <button onclick="formImport()" class="btn btn-sm btn-warning"><i
+                    class="fa fa-upload me-2"></i> Import</button>
+            <!-- BUTTON DROPDOWN -->
+            <div class="dropdown">
+                <!-- BUTTON UNTUK MELAKUKAN EXPORT PDF -->
+                <button type="button" class="btn btn-sm btn-success dropdown-toggle"
+                    data-bs-toggle="dropdown">
+                    <i class="fa fa-download me-2"></i>Export
+                </button>
+                <!-- BUTTON UNTUK MELAKUKAN EXPORT EXCEL -->
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="javascript:void(0)"
+                        onclick="exportExcel()">Excel</a>
+                    <a class="dropdown-item" href={{ route('export_pdf_buku') }} onclick="exportPdf()">PDF</a>
+                </div>
             </div>
+            </div>
+            <hr>
             @include('componen.pesan')
         </div>
         <div class="card-body mt-3">
             <div class="table-responsive">
-                <table class="table table-bordered table-hover table-striped mg-b-1 text-md-nowrap">
+                <table class="table table-bordered table-hover table-striped mg-b-1 text-md-nowrap mb-3">
                     <thead>
                         <tr>
                             <th>No</th>
@@ -56,6 +75,7 @@
                         @endforeach
                     </tbody>
                 </table>
+                {{ $dtBuku->links() }}
             </div><!-- bd -->
         </div><!-- bd -->
     </div><!-- bd -->

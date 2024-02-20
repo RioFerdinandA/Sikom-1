@@ -21,18 +21,18 @@
                     <div class="main-signin-header">
                         <h2>Selamat Datang</h2>
                         <div class="px-0 col-12 mb-2">
-                          
+                            @include('componen.pesan')
                         </div>
                         <h6>Form Input Login</h6>
-                        
+                        <form method="POST" action="{{ route('auth') }}">
                             @csrf
                             <div class="form-group">
                                 <label>Email</label>
-                                <input name="email" class="form-control" placeholder="Enter your email" type="email" value="{{ old('email') }}" equired autofocus>
+                                <input name="email" class="form-control" placeholder="Enter your email" type="email" value="{{ old('email') }}" >
                             </div>
                             <div class="form-group">
                                 <label>Password</label>
-                                <input name="password" class="form-control" placeholder="Enter your password" type="password" value="{{ old('password') }}" required>
+                                <input name="password" class="form-control" placeholder="Enter your password" type="password" value="{{ old('password') }}">
                             </div>
                             <button style="margin-left: 1em" type="submit" class="btn btn-primary"><i class="fe fe-log-in"></i> Login </button>
                             <a href="{{ route('registrasi') }}" class="btn btn-info"><i class="fe fe-log-in"></i> Sign

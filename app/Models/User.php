@@ -26,7 +26,6 @@ class User extends Authenticatable
         'nama_lengkap',
         'alamat',
         'role',
-        'verifikasi',
     ];
 
     /*-------RELASI ANTAR TABLE--------- */
