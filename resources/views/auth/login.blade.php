@@ -34,9 +34,8 @@
                                 <label>Password</label>
                                 <input name="password" class="form-control" placeholder="Enter your password" type="password" value="{{ old('password') }}">
                             </div>
-                            <button style="margin-left: 1em" type="submit" class="btn btn-primary"><i class="fe fe-log-in"></i> Login </button>
-                            <a href="{{ route('registrasi') }}" class="btn btn-info"><i class="fe fe-log-in"></i> Sign
-                                Up</a>
+                            <button style="margin-left: 4em" type="submit" class="btn btn-primary"><i class="fe fe-log-in"></i> Login </button>
+                            <a href="{{ route('registrasi') }}" class="btn btn-danger"><i class="fe fe-log-in"></i>Sign Up</a>
 
                         </form>
                     </div>

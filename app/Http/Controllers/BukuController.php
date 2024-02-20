@@ -7,6 +7,9 @@ use App\Models\buku;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Session;
 use Barryvdh\DomPDF\Facade\Pdf;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Exports\DataBukuExportView;
+
 
 
 
@@ -163,7 +166,7 @@ class BukuController extends Controller
     public function export_excel(Request $request)
     {
         //QUERY
-        $data = Buku::select('*');
+        $data = buku::select('*');
         $data = $data->get();
 
         // Pass parameters to the export class

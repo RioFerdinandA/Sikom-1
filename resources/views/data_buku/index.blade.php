@@ -30,7 +30,7 @@
                 </button>
                 <!-- BUTTON UNTUK MELAKUKAN EXPORT EXCEL -->
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="javascript:void(0)"
+                    <a class="dropdown-item" href={{ route('export_excel_buku') }} 
                         onclick="exportExcel()">Excel</a>
                     <a class="dropdown-item" href={{ route('export_pdf_buku') }} onclick="exportPdf()">PDF</a>
                 </div>

@@ -58,11 +58,11 @@
                          
                         </div>
                         <div class="dropdown main-profile-menu nav nav-item nav-link">
-                            <a class="profile-user d-flex" href=""><img src="{{ asset('assets') }}/img/faces/6.jpg" alt="user-img" class="rounded-circle mCS_img_loaded"><span></span></a>
+                            <a class="profile-user d-flex" href=""><img src="{{ asset('assets') }}/img/faces/r.jpg" alt="user-img" class="rounded-circle mCS_img_loaded"><span></span></a>
 
                             <div class="dropdown-menu">
                                 <div class="main-header-profile header-img">
-                                    <div class="main-img-user" href=""><img src="{{ asset('assets') }}/img/faces/6.jpg"></div>
+                                    <div class="main-img-user" href=""><img src="{{ asset('assets') }}/img/faces/r.jpg"></div>
                                     <h6 class=" mb-0 text-dark">{{Auth::user()->nama_lengkap}}</h6> <!-- MENAMPILAN NAMA LENGKAP YG LOGIN -->
                                     <span>{{ Auth::user()->role }}</span>
                                 </div>

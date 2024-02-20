@@ -12,7 +12,7 @@
                 <div class="app-sidebar__user">
                     <div class="dropdown user-pro-body text-center">
                         <div class="user-pic">
-                            <img src="{{ asset('assets') }}/img/faces/6.jpg" alt="user-img" class="rounded-circle mCS_img_loaded">
+                            <img src="{{ asset('assets') }}/img/faces/r.jpg" alt="user-img" class="rounded-circle mCS_img_loaded">
                         </div>
                         <div class="user-info">
                             <h6 class=" mb-0 text-dark">{{Auth::user()->nama_lengkap}}</h6> <!-- MENAMPILAN NAMA LENGKAP YG LOGIN -->
