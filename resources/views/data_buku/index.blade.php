@@ -22,7 +22,7 @@
         </div>
         <div class="card-body mt-3">
             <div class="table-responsive">
-                <table class="table table-striped mg-b-1 text-md-nowrap">
+                <table class="table table-bordered table-hover table-striped mg-b-1 text-md-nowrap">
                     <thead>
                         <tr>
                             <th>No</th>

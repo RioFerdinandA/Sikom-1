@@ -21,6 +21,8 @@ use App\Http\Controllers\LoginController;
 
 //ROUTE LOGIN
 Route::get('/',[LoginController::class, 'login'])->name('login'); // ROUTE LOGIN
+Route::get('/registrasi', [LoginController::class, 'registrasi'])->name('registrasi'); // ROUTE REGISTRASI
+
 
 //ROUTE CRUD BUKU
 Route::resource('buku', BukuController::class);
