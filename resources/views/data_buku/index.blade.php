@@ -79,6 +79,34 @@
             </div><!-- bd -->
         </div><!-- bd -->
     </div><!-- bd -->
+    @include('data_buku.import')
 </div>
+
+<script>
+    (function() {
+        // SCRIPT UNTUK MENGGUNAKAN SELECT 2
+        $('.select2').select2({
+            width: 'resolve'
+        });
+
+        // SCRIPT DATATABLE.
+        $('#tbl_list').DataTable({
+            "paging": true,
+            "lengthChange": true,
+            "searching": true,
+            "ordering": false,
+            "info": true,
+            "autoWidth": false,
+            "responsive": true,
+        });
+
+    });
+
+    // SCRIPT IMPORT EXCEL
+    function formImport() {
+        $("#formImport")[0].reset();
+        $("#mdl_formImport").modal('show');
+    }
+</script>
 @endsection
 
