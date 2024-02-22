@@ -66,7 +66,7 @@
                                     <h6 class=" mb-0 text-dark">{{Auth::user()->nama_lengkap}}</h6> <!-- MENAMPILAN NAMA LENGKAP YG LOGIN -->
                                     <span>{{ Auth::user()->role }}</span>
                                 </div>
-                                <a class="dropdown-item" href="{{ route('login')}}"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
+                                <a class="dropdown-item" href="{{ route('login')}}"><i class="fas fa-sign-out-alt"></i> Logout </a>
                             </div>
                         </div>
                         <div class="dropdown main-header-message right-toggle">

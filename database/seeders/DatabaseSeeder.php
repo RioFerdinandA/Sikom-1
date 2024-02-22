@@ -22,5 +22,15 @@ class DatabaseSeeder extends Seeder
             'alamat' => 'Indrmayu',
             'role' => 'administrator'
         ]);
+
+        User::create([
+            'username' => 'Alvand',
+            'password' => bcrypt('12345'),
+            'email' => 'Alvand@gmail.com',
+            'nama_lengkap' => 'Alvand',
+            'alamat' => 'Indrmayu',
+            'role' => 'petugas'
+        ]);
+
     }
 }

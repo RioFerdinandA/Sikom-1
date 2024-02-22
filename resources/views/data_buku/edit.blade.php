@@ -58,7 +58,7 @@
                         </div>
                     </div>
                     <button class="btn ripple btn-primary" type="submit"><i class='fa fa-save'></i> Save </button>
-                    <a href="{{ route('buku.index') }}" class="btn ripple btn-secondary"><i
+                    <a href="{{ route('buku.index') }}" class="btn ripple btn-danger"><i
                         class='fa fa-chevron-left'></i> Back <a/>
                 </form>
                 </div>

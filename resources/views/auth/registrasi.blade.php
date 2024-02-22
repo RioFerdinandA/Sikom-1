@@ -11,8 +11,7 @@
                     <div class="wd-md-50p login d-none d-md-block page-signin-style p-5 text-white">
                         <div class="my-auto authentication-pages">
                             <div>
-                                <img src="{{ asset('foto.png') }}" width="70%" class=" m-0 mb-4"
-                                    alt="logo">
+                                <img src="{{ asset('foto.png') }}" width="70%" class=" m-0 mb-4" alt="logo">
                                 <h5 class="mb-4">Aplikasi Perpustakaan <br> <u>by: Rio Ferdinand Adriansyah</u></h5>
                                 {{-- <p class="mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> --}}
                             </div>
@@ -60,11 +59,10 @@
                                         <option value="peminjam">Peminjam</option>
                                     </select>
                                 </div>
-                                <a href="{{ route('login') }}" style="margin-left: 4em" class="btn btn-info">
-                                    << Back</a>
-                                        <button type="submit" class="btn btn-primary"><i class="fe fe-log-in"></i>
-                                            Save</button>
-
+                                <button class="btn ripple btn-primary" style="margin-left: 4em" type="submit"><i
+                                        class='fa fa-save'></i> Save </button>
+                                <a href="{{ route('login') }}" class="btn ripple btn-danger"><i
+                                        class='fa fa-chevron-left'></i> Back <a />
                             </form>
                         </div>
                         {{-- <div class="main-signin-footer mt-3 mg-t-5">

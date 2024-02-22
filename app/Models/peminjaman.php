@@ -22,7 +22,7 @@ class peminjaman extends Model
     {
         return Carbon::parse($this->attributes['tanggal_pengembalian'])->translatedFormat('d F Y');
     }
-
+ 
     /*-------RELASI ANTAR TABLE--------- */
     // RELASI DARI MODEL USER KE PEMINJAMAN
     public function user()
